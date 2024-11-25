@@ -1,4 +1,7 @@
-package cartmanagement;
+package hust.soict.hedspi.aims;
+
+import hust.soict.hedspi.aims.cart.Cart;
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
 
 public class Aims {
 	public static void main(String[] args) {
@@ -19,6 +22,10 @@ public class Aims {
 		// print total cost of the items in the cart
 		System.out.println("Total Cost is: ");
 		System.out.println(anOrder.totalCost());
+		
+		// tim kiem bang ID
+		anOrder.searchById(2);
+		anOrder.searchByTitle("The Lion King");
 		
 		// Remove from the cart
 		anOrder.removeDigitalVideoDisc(dvd2);
